@@ -13,7 +13,7 @@ const INITIAL_STATE = {
                 id:2, title:"React - Redux", lessons:[
                     { id:1, title:'Quarta aula'},
                     { id:2, title:'Quinta aula'},
-                    { id:3, title:'sexo aula'},
+                    { id:3, title:'Sexta aula'},
                 ]
             },
     ]
