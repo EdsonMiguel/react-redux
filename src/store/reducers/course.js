@@ -22,16 +22,18 @@ const INITIAL_STATE = {
 
 
 const course =  (state = INITIAL_STATE, action) =>{
-if(action.type === 'TOGGLE_LESSON'){
-    return{
-        ...state,
-        activeLesson:action.payload.lesson,
-        activeModule:action.payload.module
+
+    switch (action.type) {
+        case "TOGGLE_LESSON":
+            return{
+                ...state,
+                activeLesson:action.payload.lesson,
+                activeModule:action.payload.module
+            };
+        default:
+            return state;
     }
-}
 
-
-return state;
 }
 
 export default course;
